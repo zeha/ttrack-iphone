@@ -23,7 +23,6 @@
 		E2D469B512D5394C0067C6CB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D469AF12D5394C0067C6CB /* SBJsonParser.m */; };
 		E2D469B612D5394C0067C6CB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D469B112D5394C0067C6CB /* SBJsonWriter.m */; };
 		E2D469CE12D53C400067C6CB /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = E2D469CD12D53C400067C6CB /* alert.png */; };
-		E2D469DA12D53D580067C6CB /* ttrack-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2D469D912D53D580067C6CB /* ttrack-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,7 +53,7 @@
 		E2D469B012D5394C0067C6CB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		E2D469B112D5394C0067C6CB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		E2D469CD12D53C400067C6CB /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alert.png; sourceTree = "<group>"; };
-		E2D469D912D53D580067C6CB /* ttrack-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ttrack-Info.plist"; sourceTree = "<group>"; };
+		E2D469D912D53D580067C6CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +98,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				E2D469D912D53D580067C6CB /* Info.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -115,7 +115,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E2D469D912D53D580067C6CB /* ttrack-Info.plist */,
 				E2D469CD12D53C400067C6CB /* alert.png */,
 				280E754C0DD40C5E005A515E /* MainWindow.xib */,
 			);
@@ -228,7 +227,6 @@
 				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
 				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
 				E2D469CE12D53C400067C6CB /* alert.png in Resources */,
-				E2D469DA12D53D580067C6CB /* ttrack-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +261,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ttrack_Prefix.pch;
-				INFOPLIST_FILE = "Resources/ttrack-Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = ttrack;
 			};
 			name = Debug;
@@ -275,7 +273,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ttrack_Prefix.pch;
-				INFOPLIST_FILE = "Resources/ttrack-Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = ttrack;
 				VALIDATE_PRODUCT = YES;
 			};
