@@ -23,6 +23,7 @@
 		E2D469B512D5394C0067C6CB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D469AF12D5394C0067C6CB /* SBJsonParser.m */; };
 		E2D469B612D5394C0067C6CB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D469B112D5394C0067C6CB /* SBJsonWriter.m */; };
 		E2D469CE12D53C400067C6CB /* alert.png in Resources */ = {isa = PBXBuildFile; fileRef = E2D469CD12D53C400067C6CB /* alert.png */; };
+		E2D46A7612D543410067C6CB /* CHApiRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D46A7512D543410067C6CB /* CHApiRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,9 @@
 		E2D469B112D5394C0067C6CB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		E2D469CD12D53C400067C6CB /* alert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alert.png; sourceTree = "<group>"; };
 		E2D469D912D53D580067C6CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2D46A7412D543410067C6CB /* CHApiRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHApiRequest.h; sourceTree = "<group>"; };
+		E2D46A7512D543410067C6CB /* CHApiRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHApiRequest.m; sourceTree = "<group>"; };
+		E2D46A7712D543780067C6CB /* CHApiRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHApiRequestDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				E2D46A7312D543160067C6CB /* API */,
 				E2D469B912D539680067C6CB /* Views */,
 				E2D469A512D5394C0067C6CB /* External */,
 				080E96DDFE201D6D7F000001 /* Application Delegate */,
@@ -171,6 +176,16 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		E2D46A7312D543160067C6CB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E2D46A7412D543410067C6CB /* CHApiRequest.h */,
+				E2D46A7512D543410067C6CB /* CHApiRequest.m */,
+				E2D46A7712D543780067C6CB /* CHApiRequestDelegate.h */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,6 +261,7 @@
 				E2D469B412D5394C0067C6CB /* SBJsonBase.m in Sources */,
 				E2D469B512D5394C0067C6CB /* SBJsonParser.m in Sources */,
 				E2D469B612D5394C0067C6CB /* SBJsonWriter.m in Sources */,
+				E2D46A7612D543410067C6CB /* CHApiRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

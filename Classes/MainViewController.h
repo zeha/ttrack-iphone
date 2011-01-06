@@ -7,16 +7,26 @@
 //
 
 #import "FlipsideViewController.h"
+#import "CHApiRequest.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, CHApiRequestDelegate> {
 
-	IBOutlet UILabel* alertLabel;
-	IBOutlet UILabel* stateLabel;
-	IBOutlet UISwitch* workSwitch;
-	IBOutlet UIImageView* alertImageView;
+	UILabel* alertLabel;
+	UILabel* stateLabel;
+	UISwitch* workSwitch;
+	UIImageView* alertImageView;
+	UIActivityIndicatorView* loadingIndicator;
 
 }
 
+@property (nonatomic, retain) IBOutlet UILabel* alertLabel;
+@property (nonatomic, retain) IBOutlet UILabel* stateLabel;
+@property (nonatomic, retain) IBOutlet UISwitch* workSwitch;
+@property (nonatomic, retain) IBOutlet UIImageView* alertImageView;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView* loadingIndicator;
+
+
 - (IBAction)showInfo:(id)sender;
+- (IBAction)workSwitchToggled:(id)sender;
 
 @end
